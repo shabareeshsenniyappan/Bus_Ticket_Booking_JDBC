@@ -1,3 +1,5 @@
+#schema
+
 CREATE TABLE `adminusers` (
   `adminName` varchar(20) DEFAULT NULL,
   `password` varchar(20) DEFAULT NULL,
