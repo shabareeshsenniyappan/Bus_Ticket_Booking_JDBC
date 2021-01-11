@@ -69,8 +69,6 @@ public class busticket
 			return;
 		}
 		sql="insert into agentdetails (agentname,mobileno,password) values('"+agentName+"','"+mobileNo+"','"+password+"')";
-		stmt.close();
-		stmt =(Statement) con.createStatement();
 		stmt.executeUpdate(sql);
 		sql="select max(agentcode) from agentdetails";
 		rs =(ResultSet) stmt.executeQuery(sql);
@@ -272,7 +270,6 @@ public class busticket
 					break;
 					
 			}
-			in.nextLine();
 		}
 		
 	}
